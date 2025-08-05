@@ -1,0 +1,130 @@
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --task-bg: #d0e6ff;
+  --task-completed-bg: #d4edda;
+}
+
+body.darkMode {
+  --bg-color: #121212;
+  --text-color: #f1f1f1;
+  --task-bg: #2b2b2b;
+  --task-completed-bg: #1e5128;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: var(--bg-color);
+  color: var(--text-color);
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+.mainContainer {
+  background: var(--bg-color);
+  padding: 20px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.inputSection {
+  display: flex;
+  gap: 10px;
+}
+
+#todoInput {
+  flex: 1;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+#addBtn {
+  padding: 10px 15px;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.filterSection {
+  margin: 20px 0;
+  text-align: center;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.filterBtn,
+#toggleTheme {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+}
+
+#todoList {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.taskItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--task-bg);
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.taskCompleted {
+  background: var(--task-completed-bg);
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+
+.taskText {
+  flex: 1;
+  cursor: pointer;
+}
+
+.btnGroup {
+  display: flex;
+  gap: 5px;
+}
+
+.actionBtn {
+  padding: 5px 8px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.completeBtn {
+  background-color: #007bff;
+  color: white;
+}
+
+.completeBtn.completed {
+  background-color: #28a745;
+}
+
+.deleteBtn {
+  background-color: red;
+  color: white;
+}
+
+.editBtn {
+  background-color: orange;
+  color: white;
+}

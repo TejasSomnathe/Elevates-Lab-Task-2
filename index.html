@@ -3,7 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>To-Do</title>
+    <link rel="stylesheet" href="style.css" />
+    <title>To-Do List</title>
   </head>
-  <body></body>
+  <body>
+    <div class="mainContainer">
+      <h1>📝 To-Do List</h1>
+
+      <div class="inputSection">
+        <input type="text" id="todoInput" placeholder="Add a new task" />
+        <button id="addBtn">Add</button>
+      </div>
+
+      <div class="filterSection">
+        <button class="filterBtn" data-filter="all">All</button>
+        <button class="filterBtn" data-filter="completed">Completed</button>
+        <button class="filterBtn" data-filter="notCompleted">
+          Not Completed
+        </button>
+        <button id="toggleTheme">🌙 Dark Mode</button>
+      </div>
+
+      <ul id="todoList"></ul>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>
