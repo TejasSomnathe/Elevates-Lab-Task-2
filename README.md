@@ -1,4 +1,6 @@
-# 📝 To-Do List Web App (Internship Task 2) [Visit](https://tejassomnathe.github.io/Elevates-Lab-Task-2/)
+# 📝 To-Do List Web App (Internship Task 2)
+
+🌐 [Visit Live Site](https://tejassomnathe.github.io/Elevates-Lab-Task-2/)
 
 A clean, interactive, and fully responsive **To-Do List Web App** built using only **HTML, CSS, and JavaScript (no frameworks)**.
 
